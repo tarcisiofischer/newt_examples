@@ -3,6 +3,7 @@
 	<name>newt_examples</name>
 	<comment></comment>
 	<projects>
+		<project>newt</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
