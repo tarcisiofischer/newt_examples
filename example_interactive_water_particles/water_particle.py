@@ -11,6 +11,7 @@ class WaterParticle(Particle):
 
     def __init__(self):
         Particle.__init__(self, mass=0.001)
+        self.geometry.setColor(np.array([0.1, 0.1, 0.6]))
         self.reset()
 
 
@@ -21,7 +22,7 @@ class WaterParticle(Particle):
             1.0 * random.random() + 7.0,
             2.0 * random.random() - 1.0
         ])
-        self.position = np.array([-0.5, -2.0, 0.0])
+        self.position[:] = np.array([-0.5, -2.0, 0.0])
 
 
     def update(self, delta_t):
